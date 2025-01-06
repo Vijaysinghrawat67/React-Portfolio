@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import { AnimatePresence } from 'framer-motion';
+import { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import UseScrollToTop from './hooks/useScrollToTop.jsx';
+import AppHeader from './components/shared/AppHeader.jsx';
+import AppFooter from './components/shared/AppFooter.jsx';
+
+const About = lazy(() => import('./pages/AboutMe.jsx'));
+const Contact = lazy(() => import('./pages/Contact.jsx'));
+const Home = lazy(() => import('./pages/Home.jsx'));
+const Projects = lazy(() => import('./pages/Projects.jsx'));
+const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+   
+    <AnimatePresence>
+      <div className='bg-secondary-light dark:bg-primary-dark transition duration-300'>
+        <Router>
+          {/* <ScrollToTop/> */}
+          <AppHeader/>
+          <Suspense fallback={""}>
+            <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="projects" element={<Projects/>}/>
+              <Route
+                path="projects/single-project"
+                element={<ProjectSingle/>}
+              />
+              <Route path="about" element={<About/>}/>
+              <Route path="contact" element={<Contact/>}/>
+            </Routes>
+          </Suspense>
+          <AppFooter/>
+        </Router>
+        <UseScrollToTop/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </AnimatePresence>
     </>
-  )
+    
+  );
 }
 
-export default App
+export default App;
