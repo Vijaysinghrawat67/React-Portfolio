@@ -1,42 +1,298 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/*== 
+ * React & TailwindCSS Portfolio Main CSS File
+ * Powered by: @realstoman
+*/
+
+/* Fonts */
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap');
+
+
+body {
+    font-family: 'GeneralSans-Variable';
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+/* Old font-face rules */
+/*
+@font-face {
+    font-family: 'GeneralSans-Variable';
+    src: url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Variable.woff') format('woff'),
+        url('../fonts/GeneralSans-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.font-general-variable {
+    font-family: 'GeneralSans-Variable';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: 'GeneralSans-VariableItalic';
+    src: url('../fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
+        url('../fonts/GeneralSans-VariableItalic.woff') format('woff'),
+        url('../fonts/GeneralSans-VariableItalic.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: italic;
 }
 
-.card {
-  padding: 2em;
+.font-general-variable-italic {
+    font-family: 'GeneralSans-VariableItalic';
 }
 
-.read-the-docs {
-  color: #888;
+@font-face {
+    font-family: 'GeneralSans-Extralight';
+    src: url('../fonts/GeneralSans-Extralight.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Extralight.woff') format('woff'),
+        url('../fonts/GeneralSans-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+
+.font-general-extralight {
+    font-family: 'GeneralSans-Extralight';
+}
+
+@font-face {
+    font-family: 'GeneralSans-ExtralightItalic';
+    src: url('../fonts/GeneralSans-ExtralightItalic.woff2') format('woff2'),
+        url('../fonts/GeneralSans-ExtralightItalic.woff') format('woff'),
+        url('../fonts/GeneralSans-ExtralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: italic;
+}
+
+.font-general-extralight-italic {
+    font-family: 'GeneralSans-ExtralightItalic';
+}
+
+@font-face {
+    font-family: 'GeneralSans-Light';
+    src: url('../fonts/GeneralSans-Light.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Light.woff') format('woff'),
+        url('../fonts/GeneralSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+.font-general-light {
+    font-family: 'GeneralSans-Light';
+}
+
+@font-face {
+    font-family: 'GeneralSans-LightItalic';
+    src: url('../fonts/GeneralSans-LightItalic.woff2') format('woff2'),
+        url('../fonts/GeneralSans-LightItalic.woff') format('woff'),
+        url('../fonts/GeneralSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+.font-general-light-italic {
+    font-family: 'GeneralSans-LightItalic';
+}
+
+@font-face {
+    font-family: 'GeneralSans-Regular';
+    src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Regular.woff') format('woff'),
+        url('../fonts/GeneralSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+.font-general-regular {
+    font-family: 'GeneralSans-Regular';
+}
+
+@font-face {
+    font-family: 'GeneralSans-Italic';
+    src: url('../fonts/GeneralSans-Italic.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Italic.woff') format('woff'),
+        url('../fonts/GeneralSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+.font-general-italic {
+    font-family: 'GeneralSans-Italic';
+}
+
+@font-face {
+    font-family: 'GeneralSans-Medium';
+    src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Medium.woff') format('woff'),
+        url('../fonts/GeneralSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+.font-general-medium {
+    font-family: 'GeneralSans-Medium';
+}
+
+@font-face {
+    font-family: 'GeneralSans-MediumItalic';
+    src: url('../fonts/GeneralSans-MediumItalic.woff2') format('woff2'),
+        url('../fonts/GeneralSans-MediumItalic.woff') format('woff'),
+        url('../fonts/GeneralSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+.font-general-medium-italic {
+    font-family: 'GeneralSans-MediumItalic';
+}
+
+@font-face {
+    font-family: 'GeneralSans-Semibold';
+    src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Semibold.woff') format('woff'),
+        url('../fonts/GeneralSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+.font-general-semibold {
+    font-family: 'GeneralSans-Semibold';
+}
+
+@font-face {
+    font-family: 'GeneralSans-SemiboldItalic';
+    src: url('../fonts/GeneralSans-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/GeneralSans-SemiboldItalic.woff') format('woff'),
+        url('../fonts/GeneralSans-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: italic;
+}
+
+.font-general-semibold-italic {
+    font-family: 'GeneralSans-SemiboldItalic';
+}
+
+@font-face {
+    font-family: 'GeneralSans-Bold';
+    src: url('../fonts/GeneralSans-Bold.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Bold.woff') format('woff'),
+        url('../fonts/GeneralSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+.font-general-bold {
+    font-family: 'GeneralSans-Bold';
+}
+
+@font-face {
+    font-family: 'GeneralSans-BoldItalic';
+    src: url('../fonts/GeneralSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/GeneralSans-BoldItalic.woff') format('woff'),
+        url('../fonts/GeneralSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+.font-general-bold-italic {
+    font-family: 'GeneralSans-BoldItalic';
+}
+*/
+
+/* New font-face rules */
+.font-general-variable {
+    font-family: 'GeneralSans-Variable', sans-serif;
+}
+
+.font-general-variable-italic {
+    font-family: 'GeneralSans-VariableItalic', sans-serif;
+}
+
+.font-general-extralight {
+    font-family: 'GeneralSans-Extralight', sans-serif;
+}
+
+.font-general-extralight-italic {
+    font-family: 'GeneralSans-ExtralightItalic', sans-serif;
+}
+
+.font-general-light {
+    font-family: 'GeneralSans-Light', sans-serif;
+}
+
+.font-general-light-italic {
+    font-family: 'GeneralSans-LightItalic', sans-serif;
+}
+
+.font-general-regular {
+    font-family: 'GeneralSans-Regular', sans-serif;
+}
+
+.font-general-italic {
+    font-family: 'GeneralSans-Italic', sans-serif;
+}
+
+.font-general-medium {
+    font-family: 'GeneralSans-Medium', sans-serif;
+}
+
+.font-general-medium-italic {
+    font-family: 'GeneralSans-MediumItalic', sans-serif;
+}
+
+.font-general-semibold {
+    font-family: 'GeneralSans-Semibold', sans-serif;
+}
+
+.font-general-semibold-italic {
+    font-family: 'GeneralSans-SemiboldItalic', sans-serif;
+}
+
+.font-general-bold {
+    font-family: 'GeneralSans-Bold', sans-serif;
+}
+
+.font-general-bold-italic {
+    font-family: 'GeneralSans-BoldItalic', sans-serif;
+}
+
+/* Scroll to top style */
+.scrollToTop {
+    @apply bg-indigo-600;
+    @apply text-white;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    height: 20px;
+    justify-content: center;
+    z-index: 999;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.9;
+}
+
+.scrollToTop:hover {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
