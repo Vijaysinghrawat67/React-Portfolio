@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 import AppBanner from '../components/shared/AppBanner.jsx';
-// projects grid
-//projectprovider
+import Projectgrid from '../components/projects/ProjectsGrid.jsx';
+import {ProjectsProvider} from '../context/ProjectsContext.jsx';
 import Button from '../components/reusable/Button.jsx';
 
 function Home() {
@@ -9,9 +9,9 @@ function Home() {
     <div className="container mx-auto">
     <AppBanner></AppBanner>
 
-    {/* <ProjectsProvider>
-      <ProjectsGrid></ProjectsGrid>
-    </ProjectsProvider> */}
+    <ProjectsProvider>
+      <Projectgrid></Projectgrid>
+    </ProjectsProvider>
 
     <div className="mt-8 sm:mt-10 flex justify-center">
       <Link

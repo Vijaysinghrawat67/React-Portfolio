@@ -11,13 +11,6 @@ function AppFooterCopyright() {
 					React & Tailwind CSS Portfolio
 				</a>
 				.
-				{/* <a
-					href="https://stoman.me"
-					target="__blank"
-					className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
-				>
-					Vijay
-				</a> */}
 				Vijay
 			</div>
 		</div>

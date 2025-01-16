@@ -1,38 +1,28 @@
 import {
 	FiGithub,
-	FiTwitter,
 	FiLinkedin,
-	FiGlobe,
-	FiYoutube,
+	FiInstagram
 } from 'react-icons/fi';
 import AppFooterCopyright from './AppFooterCopyright';
 
 const socialLinks = [
+	
 	{
 		id: 1,
-		icon: <FiGlobe />,
-		url: 'https://www.stoman.me/',
-	},
-	{
-		id: 2,
 		icon: <FiGithub />,
 		url: 'https://github.com/Vijaysinghrawat67',
 	},
 	{
-		id: 3,
-		icon: <FiTwitter />,
-		url: 'https://twitter.com/realstoman',
-	},
-	{
-		id: 4,
+		id: 2,
 		icon: <FiLinkedin />,
 		url: 'www.linkedin.com/in/vijaysingh02',
 	},
 	{
-		id: 5,
-		icon: <FiYoutube />,
-		url: 'https://www.youtube.com/c/realstoman',
+		id: 3,
+		icon: <FiInstagram />,
+		url: '#',
 	},
+	
 ];
 
 function AppFooter() {

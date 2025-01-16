@@ -3,8 +3,8 @@ import {FiMenu, FiMoon, FiSun, FiX} from 'react-icons/fi';
 import {Link} from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher.jsx';
 import HireMeModal from '../HireMeModal';
-import logoDark from '../../images/logo1V.png';
-import logoLight from '../../images/logo2V.png';
+import logoDark from '../../images/vimg1.png';
+import logoLight from '../../images/vimg2.png';
 import {motion} from 'framer-motion';
 import Button from '../reusable/Button';
 
@@ -50,21 +50,22 @@ function AppHeader() {
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
-						<Link to="/">
-							{activeTheme === 'dark' ? (
-								<img
-									src={logoDark}
-									className="w-36"
-									alt="Dark Logo"
-								/>
-							) : (
-								<img
-									src={logoLight}
-									className="w-36"
-									alt="Dark Logo"
-								/>
-							)}
-						</Link>
+					<Link to="/">
+    {activeTheme === 'dark' ? (
+        <img
+            src={logoDark}
+            className="w-20 bg-transparent "
+            alt="Dark Logo"
+        />
+    ) : (
+        <img
+            src={logoLight}
+            className="w-20 bg-transparent "
+            alt="Light Logo"
+        />
+    )}
+</Link>
+
 					</div>
                     {/* Theme switcher small screen */}
 					<div

@@ -24,8 +24,9 @@ export const ProjectsProvider = (props) => {
 
     // selects projects by category
 
-    const selectProjectsByCaegory = projects.filter((item) => {
-        let category = item.category.charAt(0).toUpperCase ()+ item.category.slice(1);
+    const selectProjectsByCategory = projects.filter((item) => {
+        let category = 
+            item.category.charAt(0).toUpperCase ()+ item.category.slice(1);
         return category.includes(selectProject);
     })
 
@@ -34,11 +35,13 @@ export const ProjectsProvider = (props) => {
         <ProjectsContext.Provider
             value={{
                 projects,
-                searchProject,
+                setProjects,
                 searchProject,
                 setSearchProject,
+                searchProjectsByTitle,
                 selectProject,
                 setSelectProject,
+                selectProjectsByCategory,
             }}
         >
             {props.children}
