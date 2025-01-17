@@ -1,8 +1,7 @@
-import Image1 from '../images/projectImages/Image1.png'
-// image2
-// image3
-//image4
-
+import Image1 from '../images/projectImages/Image1.png';
+import Image2 from '../images/projectImages/Image2.1.webp';
+import Image3 from '../images/projectImages/Image3.png';
+import Image4 from '../images/projectImages/Image4.png';
 export const projectsData = [
     {
         id : 1,
@@ -15,23 +14,39 @@ export const projectsData = [
             tags: 'UI / Frontend',
         },
     },
-
-    {
-        id : 2,
-        title : 'A Vedio Streaming Plateform Backend Prototype',
-        category : 'Mobile Application', //change
-        img : Image1,
-    },
     {
         id : 3,
         title : 'Real Time Multiplayer Tic-Tac-Toe game',
         category : 'Website',
-        img :Image1,
+        img :Image3,
+        ProjectHeader : {
+            title : 'Project Management UI - Form Context',
+            publishedDate : 'Dec, 2024',
+            tags: 'UI / Frontend',
+        },
     },
+
+    {
+        id : 2,
+        title : 'A Vedio Streaming Plateform Backend Prototype',
+        category : 'Backend Prototype', //change
+        img : Image2,
+        ProjectHeader : {
+            title : 'Project Management UI - Form Context',
+            publishedDate : 'Dec, 2024',
+            tags: 'UI / Frontend',
+        },
+    },
+  
     {
         id : 4,
         title : 'Personal Portfolio Website',
         category : ' UI/UX Design',
-        img : Image1,
+        img : Image4,
+        ProjectHeader : {
+            title : 'Project Management UI - Form Context',
+            publishedDate : 'Dec, 2024',
+            tags: 'UI / Frontend',
+        },
     },
 ];
