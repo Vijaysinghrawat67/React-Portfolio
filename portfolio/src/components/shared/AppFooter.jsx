@@ -20,7 +20,7 @@ const socialLinks = [
 	{
 		id: 3,
 		icon: <FiInstagram />,
-		url: '#',
+		url: 'https://www.instagram.com/vij__ay740',
 	},
 	
 ];

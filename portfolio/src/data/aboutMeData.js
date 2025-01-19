@@ -1,5 +1,21 @@
 export const aboutMeData = {
-	bio: 'A final-year computer science student with a strong foundation in Java, JavaScript, and the full stack MERN technology stack, seeking an entry-level software developer position to apply my technical skills and eagerness to learn in a dynamic environment. Excited to contribute to innovative software solutions within a collaborative team.',
+	
+		bio: `
+		Hi, I'm Vijay Singh Rawat, a passionate final-year computer science student from Bageshwar, Uttarakhand. Born and raised amidst the serene hills, I developed an early fascination for technology and its potential to solve real-world problems.
+	  
+		I am currently pursuing my Bachelor's degree in Computer Applications at Dev Bhoomi Uttarakhand University, Dehradun, where I have gained a strong foundation in full-stack development, including Java, JavaScript, and the MERN technology stack. Recently, I completed an internship at Ensino Research and Development, Dehradun, as a Frontend Developer. During this time, I gained hands-on expertise in modern frontend web development practices, implementing responsive web interfaces using React.js and Tailwind CSS, and collaborating on live projects to enhance application usability.
+	  
+		Beyond academics, I have a keen interest in playing cricket, exploring mathematics, nature science, and problem-solving. These interests fuel my curiosity and drive to learn more about computer science and its endless possibilities.
+	  
+		I have worked on significant projects such as a Collaborative Study Portal and a Video Streaming Platform Prototype, involving user authentication, CRUD operations, API integrations, and scalable backend systems. I am eager to start my career as a software developer, contributing to innovative software solutions within a collaborative team.
+	  
+		My goal is to continuously learn and grow in a dynamic environment, ultimately making a positive impact through technology.
+	  
+		
+		`,
+	  
+	  
+	  
 	skills: [
 	  { id: 1, name: 'HTML', icon: 'FaHtml5', description: 'Markup Language' },
 	  { id: 2, name: 'CSS', icon: 'FaCss3Alt', description: 'Style Sheet Language' },
